@@ -1,0 +1,80 @@
+body {
+    background-image: url('../zdj/tlo.jpg');
+    background-size:cover;
+    margin-top: 0;
+    color: rgb(212, 153, 153);
+    font-size: 20px;
+    text-align:center;
+    background-attachment: fixed;
+}
+.logowanie{
+    font-size: 12px;
+    color:rgb(131, 131, 131);
+    margin-left: 80px;
+}
+.editForm{
+    float:left;
+    color:green;
+}
+.createForm{
+    float:left;
+    color:lightblue;
+}
+.deleteForm{
+    float:left;
+    color:red;
+}
+ul{
+    background-color: white;
+    text-align: left;
+    color: black;
+}
+
+table{
+    width: 100%;
+}
+
+.main{
+    width: 80%;
+    background-color: rgb(250, 225, 205);
+    color: black;
+    text-align: center;
+}
+
+.ref{
+    background-color: rgb(83, 57, 52);
+    width: 80%;
+}
+
+div{
+    float: left;
+}
+
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.test-block {
+    width: 200px;
+    border: 2px solid rgb(24, 154, 163);
+    background: rgba(24, 154, 163, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
