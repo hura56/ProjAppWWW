@@ -30,7 +30,7 @@ function PokazKontakt()
         ';
     return $formularz;
 }
-
+// wysylanie maila nie dziala, poprawic
 function WyslijMailKontakt($odbiorca)
 {
     if (empty($_POST['temat']) || empty($_POST['tresc']) || empty($_POST['email'])) {
