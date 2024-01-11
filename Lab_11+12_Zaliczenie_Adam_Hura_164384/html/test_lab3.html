@@ -1,0 +1,80 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<h1>TEST Z LAB3</h1>
+
+<div id="animacjaTestowa1" class="test-block">
+  <i>Kliknij, a się powiększe</i>
+</div>
+
+<script>
+  var powiekszony = false;
+
+  $("#animacjaTestowa1").on("click", function () {
+    if (!powiekszony) {
+      $(this).animate(
+        {
+          width: "500px",
+          opacity: 0.4,
+          fontSize: "3em",
+          borderwidth: "10px",
+        },
+        750
+      );
+      $(this).html("<i>Kliknij, a się zmniejsze</i>");
+      powiekszony = true;
+    } else {
+      $(this).animate(
+        {
+          width: "200px",
+          opacity: 1,
+          fontSize: "1em",
+          borderwidth: "1px",
+        },
+        750
+      );
+      $(this).html("<i>Kliknij, a się powiększe</i>");
+      powiekszony = false;
+    }
+  });
+</script>
+<br /><br /><br /><br />
+<div id="animacjaTestowa2" class="test-block">
+  <i>Najedź kursorem, a się powiększe</i>
+</div>
+
+<script>
+  $("#animacjaTestowa2").on({
+    mouseover: function () {
+      $(this).animate(
+        {
+          width: 300,
+        },
+        200
+      );
+    },
+    mouseout: function () {
+      $(this).animate(
+        {
+          width: 200,
+        },
+        400
+      );
+    },
+  });
+</script>
+<br /><br /><br /><br /><br />
+<div id="animacjaTestowa3" class="test-block"><i>Klikaj, abym urósł</i></div>
+
+<script>
+  $("#animacjaTestowa3").on("click", function () {
+    if (!$(this).is(":animated")) {
+      $(this).animate(
+        {
+          width: "+=" + 50,
+          height: "+=" + 10,
+          opacity: "-=" + 0.1,
+        },
+        3000
+      );
+    }
+  });
+</script>

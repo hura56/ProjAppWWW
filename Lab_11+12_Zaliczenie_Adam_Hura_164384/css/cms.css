@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(97, 97, 97);
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #222222;
+    }
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    background-color: #99af4c;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
